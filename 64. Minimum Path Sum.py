@@ -34,7 +34,7 @@ class Solution:
                     grid[i][j] += grid[i - 1][j]
                 else:
                     grid[i][j] = min(grid[i][j] + grid[i][j - 1], grid[i][j] + grid[i - 1][j])
-        
+
         return grid[-1][-1]
 
 # 120ms, 15.3MB

@@ -37,7 +37,7 @@ class Solution:
         dp = [1] + [0] * (len(obstacleGrid[0])-1)
         for i in range(len(obstacleGrid)):
             for j in range(len(obstacleGrid[0])):
-                dp[j] = 0 if obstacleGrid[i][j] == 1 else dp[j] + dp[j-1] if j > 0 else dp[j]    
+                dp[j] = 0 if obstacleGrid[i][j] == 1 else dp[j] + dp[j-1] if j > 0 else dp[j]
         return dp[-1]
 
 # 52ms, 13.8MB
